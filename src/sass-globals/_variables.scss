@@ -1,0 +1,38 @@
+/* Front-end Style Guide
+
+Layout
+
+The designs were created to the following widths: */
+
+$mobile: 375px;
+$desktop: 1440px;
+
+/* Colors */
+
+$primary: (
+red: hsl(0, 78%, 62%),
+cyan: hsl(180, 62%, 55%),
+orange: hsl(34, 97%, 64%),
+blue: hsl(212, 86%, 64%)
+);
+
+$neutral: (
+very-dark-blue: hsl(234, 12%, 34%),
+grayish-blue: hsl(229, 6%, 66%),
+very-light-gray: hsl(0, 0%, 98%)
+);
+
+/* ## Typography
+
+### Body Copy */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$font-size: 15px;
+
+/* Fonts */
+
+$font-family: 'Poppins', sans-serif;
+$thin: 200;
+$medium: 400;
+$bold: 600;

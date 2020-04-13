@@ -1,0 +1,8 @@
+@import "./sass-globals/variables";
+
+.App {
+  text-align: center;
+  font-family: $font-family;
+  font-size: $font-size;
+  background-color: map-get($neutral, very-light-gray);
+}

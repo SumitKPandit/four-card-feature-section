@@ -1,0 +1,24 @@
+@import "../../sass-globals/variables";
+
+.card {
+    margin: 20px auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 50px -15px map-get($neutral, grayish-blue);
+    text-align: left;
+    div.color {
+        height: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    div.content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        img {
+            padding-top: 110px;
+            align-self: flex-end;
+        }
+    }
+}
