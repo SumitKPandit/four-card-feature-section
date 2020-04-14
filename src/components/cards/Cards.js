@@ -2,16 +2,17 @@ import React from "react";
 import styles from "./cards.module.scss";
 import Card from "../card/Card";
 
-const Cards = props => (
+const Cards = ({ cards }) => (
     <div className={styles.cards}>
-        {props.cards.map((card, index) => (
-            <Card 
-                key={index}
-                title={card.title}
-                desc={card.desc}
-                img={card.img}
-                color={card.color}
-            />
+        {cards.map((card, index) => (
+            <div className={styles.card} key={index}>
+                <Card 
+                    title={card.title}
+                    desc={card.desc}
+                    img={card.img}
+                    color={card.color}
+                />
+            </div>
         ))}
     </div>    
 );

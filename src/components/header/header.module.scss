@@ -3,7 +3,7 @@
 .header {
     font-family: $font-family;
     padding: 50px 20px;
-    color: map-get($neutral, very-dark-blue );
+    color: map-get($neutral, very-dark-blue);
     h1 {
         font-weight: $thin;
         font-size: 1.5rem;
@@ -13,9 +13,24 @@
         font-size: 1.5rem;
         margin-top: 0;
         padding-top: 0;
+        color: map-get($neutral, very-dark-blue);
     }
     p {
         font-weight: $medium;
         margin-top: 30px;
+        color: map-get($neutral, grayish-blue);
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: $mobile) {
+    .header {
+        p {
+            max-width: 500px;
+            margin: 30px auto;
+            margin-bottom: 0;
+        }
     }
 }
