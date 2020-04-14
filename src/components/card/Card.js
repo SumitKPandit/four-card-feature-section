@@ -5,10 +5,8 @@ const Card = props => (
     <div className={styles.card}>
         <div className={styles.color} style={{backgroundColor: props.color}}></div>
         <div className={styles.content}>
-            <div className={styles.text}>
-                <h2>{props.title}</h2>
-                <p>{props.desc}</p>
-            </div>
+            <h2>{props.title}</h2>
+            <p>{props.desc}</p>
             <img src={props.img} alt={props.title} />
         </div>
     </div>

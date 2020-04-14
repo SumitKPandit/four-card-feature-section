@@ -2,7 +2,7 @@
 
 .header {
     font-family: $font-family;
-    padding: 50px 20px;
+    padding: 50px 10%;
     color: map-get($neutral, very-dark-blue);
     h1 {
         font-weight: $thin;
@@ -25,10 +25,20 @@
     }
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: map-get($breakpoints, small)) {
     .header {
         p {
-            width: 500px;
+            width: 75%;
+            margin: 30px auto;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, medium)) {
+    .header {
+        p {
+            width: 45%;
             margin: 30px auto;
             margin-bottom: 0;
         }
