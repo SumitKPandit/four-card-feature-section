@@ -2,32 +2,45 @@
 
 .card {
     margin: 0 auto;
-    margin-bottom: 20px;
-    height: 300px;
+    margin-bottom: 1.45em;
+    height: 15em;
     max-width: 350px;
     border-radius: 3%;
     box-shadow: 0 5px 50px -15px map-get($neutral, grayish-blue);
     text-align: left;
     overflow: hidden;
+
+    @media only screen and (min-width: map-get($breakpoints, medium )) {
+        height: 17em;
+    }
+
     div.color {
         height: 5px;
     }
     div.content {
-        padding: 30px;
-        height: 100%;
+        padding: 1.7em;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         h2 {
             color: map-get($neutral, very-dark-blue);
-            margin-bottom: 10px;
+            margin-bottom: 0.3em;
+            font-size: 1.3em;
         }
         p {
             color: map-get($neutral, grayish-blue);
+            font-size: 0.85em; 
         }
         img {
-            margin-top: auto;
+            margin-top: 2.1em;
             align-self: flex-end;
+            max-width: 23%;
+            width: auto;
+            height: auto;
+            margin-bottom: 0.4em;
+            @media only screen and (min-width: map-get($breakpoints, medium )) {
+                margin-top: 3.5em;
+            }
         }
     }
 }

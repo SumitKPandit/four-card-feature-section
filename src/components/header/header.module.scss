@@ -4,6 +4,7 @@
     font-family: $font-family;
     padding: 50px 10%;
     color: map-get($neutral, very-dark-blue);
+    padding-bottom: 5em;
     h1 {
         font-weight: $thin;
         font-size: 1.5rem;
@@ -17,7 +18,8 @@
     }
     p {
         font-weight: $medium;
-        margin-top: 30px;
+        margin-top: 1em;
+        line-height: 1.6em;
         color: map-get($neutral, grayish-blue);
         width: 100%;
         margin-bottom: 0;
@@ -25,22 +27,21 @@
     }
 }
 
-@media screen and (min-width: map-get($breakpoints, small)) {
-    .header {
-        p {
-            width: 75%;
-            margin: 30px auto;
-            margin-bottom: 0;
-        }
-    }
-}
-
 @media screen and (min-width: map-get($breakpoints, medium)) {
     .header {
+        padding-bottom: 4em;
+        h1 {
+            font-size: 2.45em;
+        }
+        p.tagline {
+            font-size: 2.4em;
+        }
         p {
-            width: 45%;
-            margin: 30px auto;
+            width: 48%;
+            margin: 0 auto;
+            margin-top: 0.9em;
             margin-bottom: 0;
+            font-size: 1em;
         }
     }
 }
